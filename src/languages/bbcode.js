@@ -1,6 +1,6 @@
 /*
 Language: bbcode
-Author: Paul Reid <paul@reid-family.org>
+Author: Alteras1
 Description: highlightjs language definition for bbcode files
 Category: config, markup
 */
