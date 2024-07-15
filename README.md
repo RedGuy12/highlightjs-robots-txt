@@ -11,27 +11,39 @@ This project is currently unmaintained and could use a new maintainer.  If inter
 
 Simply include the Highlight.js library in your webpage or Node app, then load this module.
 
+
 ### Static website or simple usage
 
-Simply load the module after loading Highlight.js.  The file you want is `bbcode.js` in the root directory.  This module is just a CDN build of the language, so it will register itself as the Javascript is loaded.
+Simply load the module after loading Highlight.js.  You'll use the minified version found in the `dist` directory.  This module is just a CDN build of the language, so it will register itself as the Javascript is loaded.
 
 ```html
-<link rel="stylesheet" href="/path/to/styles/default.css">
-<script src="/path/to/highlight.min.js"></script>
-<script src="/path/to/highlightjs-bbcode/bbcode.js"></script>
+<script type="text/javascript" src="/path/to/highlight.min.js"></script>
+<script type="text/javascript" src="/path/to/bbcode.min.js"></script>
 <script type="text/javascript">
   hljs.highlightAll();
 </script>
 ```
 
-### Using directly from the jsDelivr CDN
+### Using directly from the UNPKG CDN
 
 ```html
-<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css">
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/RedGuy12/highlightjs-bbcode/src/bbcode.min.js"></script>
+<script type="text/javascript"
+  src="https://unpkg.com/highlightjs-bbcode@0.10/dist/bbcode.min.js"></script>
 ```
 
+- More info: <https://unpkg.com>
+
+### With Node or another build system
+
+If you're using Node / Webpack / Rollup / Browserify, etc, simply require the language module, then register it with Highlight.js.
+
+```javascript
+var hljs = require('highlight.js');
+var hljsBbcode = require('highlightjs-bbcode');
+
+hljs.registerLanguage("bbcode", hljsBbcode);
+hljs.highlightAll();
+```
 
 ## License
 

@@ -1,6 +1,6 @@
 {
   "name": "highlightjs-bbcode",
-  "version": "0.9",
+  "version": "0.10",
   "description": "Highlight.JS syntax definition for BBCode format",
   "main": "src/bbcode.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RedGuy12/highlightjs-bbcode.git"
+    "url": "https://github.com/highlightjs/highlightjs-bbcode.git"
   },
   "keywords": [
     "bbcode",
@@ -19,7 +19,7 @@
   "author": "Paul Reid <paul@reid-family.org>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RedGuy12/highlightjs-bbcode/issues"
+    "url": "https://github.com/highlightjs/highlightjs-bbcode/issues"
   },
-  "homepage": "https://github.com/RedGuy12/highlightjs-bbcode"
+  "homepage": "https://github.com/highlightjs/highlightjs-bbcode"
 }
